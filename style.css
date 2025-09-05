@@ -1,29 +1,33 @@
-/* 头像+标题布局 */
+header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center; /* 保持小屏幕文字居中 */
+}
+
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: center; /* 居中对齐 */
-    gap: 20px; /* 图片和文字之间间距 */
-    flex-wrap: wrap; /* 响应式，小屏幕自动换行 */
+    align-items: center;    /* 头像和文字垂直居中 */
+    justify-content: center; /* 水平居中整个内容 */
+    gap: 20px;              /* 图片和文字间距 */
+    flex-wrap: wrap;        /* 小屏幕自动换行 */
 }
 
 .profile-pic {
-    width: 100px;       /* 头像大小可调整 */
-    height: 100px;
-     /* 圆形头像 */
-    object-fit: cover;  /* 保持比例填充 */
-    border: 2px solid #87CEEB; /* 给头像加边框，呼应导航色 */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;      /* 保持比例裁剪填满圆形 */
+    border-radius: 50%;     /* 圆形 */
+    border: 3px solid #ffa500; /* 可选边框 */
 }
 
 .header-text h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .header-text p {
     margin: 5px 0 0 0;
-    font-size: 1.2em;
-    color: #e0e0e0; /* 与整体文字颜色一致 */
 }
 
 /* 保持原来的全局样式 */
