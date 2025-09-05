@@ -1,0 +1,89 @@
+/* 头像+标题布局 */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 居中对齐 */
+    gap: 20px; /* 图片和文字之间间距 */
+    flex-wrap: wrap; /* 响应式，小屏幕自动换行 */
+}
+
+.profile-pic {
+    width: 100px;       /* 头像大小可调整 */
+    height: 100px;
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover;  /* 保持比例填充 */
+    border: 2px solid #87CEEB; /* 给头像加边框，呼应导航色 */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header-text p {
+    margin: 5px 0 0 0;
+    font-size: 1.2em;
+    color: #e0e0e0; /* 与整体文字颜色一致 */
+}
+
+/* 保持原来的全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #87CEEB;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+section.card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: #ffa500;
+}
+
+.zoomable {
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card img {
+    margin: 10px;
+    border-radius: 8px;
+    max-width: 100%;
+}
