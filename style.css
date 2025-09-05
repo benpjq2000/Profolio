@@ -10,7 +10,7 @@
 .profile-pic {
     width: 100px;       /* 头像大小可调整 */
     height: 100px;
-    border-radius: 50%; /* 圆形头像 */
+     /* 圆形头像 */
     object-fit: cover;  /* 保持比例填充 */
     border: 2px solid #87CEEB; /* 给头像加边框，呼应导航色 */
 }
